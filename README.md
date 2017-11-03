@@ -1,116 +1,78 @@
-The content below is an example project proposal / requirements document. Replace the text below the lines marked "__TODO__" with details specific to your project. Remove the "TODO" lines.
-
-(___TODO__: your project name_)
-
-# Shoppy Shoperson 
+Bracketology
 
 ## Overview
 
-(___TODO__: a brief one or two paragraph, high-level description of your project_)
+Many clubs and organizations, NYU and otherwise, will sometimes host intra-organizational competitions. Clubs on campus like Chess club, or Super Smash Brothers Club will even host full blown tournaments. Keeping track of that information can be a nuisance, and that's what Bracketology hopes to help with.
 
-Remembering what to buy at the grocery store is waaaaay too difficult. Also, shopping for groceries when you're hungry leads to regrettable purchases. Sooo... that's where Shoppy Shoperson comes in!
-
-Shoppy Shoperson is a web app that will allow users to keep track of multiple grocery lists. Users can register and login. Once they're logged in, they can create or view their grocery list. For every list that they have, they can add items to the list or cross off items.
-
+Bracketology will be a web app where users will be able to register and "log into" a tournament based on a key that will either be given to them by someone who has already registered the tournament, or to them directly by the app if they are the first one to register. From there on, users can see a March Madness style view of their tournament's progress, as well as their current matchup, and any pertinent stats of their upcoming game. As the Tournament progresses, so will the app.
 
 ## Data Model
 
-(___TODO__: a description of your application's data and their relationships to each other_) 
+The application will have Users and Tournaments
 
-The application will store Users, Lists and Items
-
-* users can have multiple lists (via references)
-* each list can have multiple items (by embedding)
-
-(___TODO__: sample documents_)
+Each Tournaments May (Should) Have multiple Users
 
 An Example User:
 
 ```javascript
 {
-  username: "shannonshopper",
+  username: "User",
   hash: // a password hash,
-  lists: // an array of references to List documents
+  tournaments: //an array of keys that would give the users acsess to particular tournaments
 }
 ```
 
-An Example List with Embedded Items:
+An Example Tournament with Embedded Items:
 
 ```javascript
 {
-  user: // a reference to a User object
-  name: "Breakfast foods",
-  items: [
-    { name: "pancakes", quantity: "9876", checked: false},
-    { name: "ramen", quantity: "2", checked: true},
-  ],
-  createdAt: // timestamp
+  Users: //an array of user objects with usernames, and seeds
+  Name: //title of the tournament
 }
 ```
 
 
 ## [Link to Commented First Draft Schema](db.js) 
 
-(___TODO__: create a first draft of your Schemas in db.js and link to it_)
+![Link to Schema](src/db.js)
 
 ## Wireframes
 
-(___TODO__: wireframes for all of the pages on your site; they can be as simple as photos of drawings or you can use a tool like Balsamiq, Omnigraffle, etc._)
+![Home Page](documentation/Home_Page.jpg)
 
-/list/create - page for creating a new shopping list
+![Registration](documentation/Registration_Page.jpg)
 
-![list create](documentation/list-create.png)
+![Start up table](documentation/Startup_Table.jpg)
 
-/list - page for showing all shopping lists
+![Table Prompt](documentation/Table_prompt.jpg)
+(This would be after the admin presses update, and would cycle through the matches)
 
-![list](documentation/list.png)
-
-/list/slug - page for showing specific shopping list
-
-![list](documentation/list-slug.png)
+![Winner Display](documentation/Display_Winner.jpg)
 
 ## Site map
 
-(___TODO__: draw out a site map that shows how pages are related to each other_)
-
-Here's a [complex example from wikipedia](https://upload.wikimedia.org/wikipedia/commons/2/20/Sitemap_google.jpg), but you can create one without the screenshots, drop shadows, etc. ... just names of pages and where they flow to.
+![Site Map](documentation/Site_Map.jpg)
 
 ## User Stories or Use Cases
 
-(___TODO__: write out how your application will be used through [user stories](http://en.wikipedia.org/wiki/User_story#Format) and / or [use cases](https://www.mongodb.com/download-center?jmp=docs&_ga=1.47552679.1838903181.1489282706#previous)_)
-
-1. as non-registered user, I can register a new account with the site
-2. as a user, I can log in to the site
-3. as a user, I can create a new grocery list
-4. as a user, I can view all of the grocery lists I've created in a single list
-5. as a user, I can add items to an existing grocery list
-6. as a user, I can cross off items in an existing grocery list
+1. As a non-registered user, I can register, and either create a new tournament, or join one.
+2. As an admin (someone who starts the tournament) I can edit information, such as who one each round, and update the table.
+3. As a non-admin user, I can view the progress of any tournament I'm taking part in.
 
 ## Research Topics
 
-(___TODO__: the research topics that you're planning on working on along with their point values... and the total points of research topics listed_)
+(5 points) Integrate user authentication.
 
-* (5 points) Integrate user authentication
-    * I'm going to be using passport for user authentication
-    * And account has been made for testing; I'll email you the password
-    * see <code>cs.nyu.edu/~jversoza/ait-final/register</code> for register page
-    * see <code>cs.nyu.edu/~jversoza/ait-final/login</code> for login page
-* (4 points) Perform client side form validation using a JavaScript library
-    * see <code>cs.nyu.edu/~jversoza/ait-final/my-form</code>
-    * if you put in a number that's greater than 5, an error message will appear in the dom
-* (5 points) vue.js
-    * used vue.js as the frontend framework; it's a challenging library to learn, so I've assigned it 5 points
+(2 points) Use a CSS framework throughout my site.
 
-10 points total out of 8 required points (___TODO__: addtional points will __not__ count for extra credit_)
+(3 points) Configuration management.
 
 
-## [Link to Initial Main Project File](app.js) 
 
-(___TODO__: create a skeleton Express application with a package.json, app.js, views folder, etc. ... and link to your initial app.js_)
+10 points total out of 8 required points.
+
+
+## [Link to Initial Main Project File](src/app.js) 
+
 
 ## Annotations / References Used
-
-(___TODO__: list any tutorials/references/etc. that you've based your code off of_)
-
-1. [passport.js authentication docs](http://passportjs.org/docs) - (add link to source code that was based on this)
-2. [tutorial on vue.js](https://vuejs.org/v2/guide/) - (add link to source code that was based on this)
