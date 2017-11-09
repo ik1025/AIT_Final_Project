@@ -44,3 +44,5 @@ mongoose.connect(dbconf);
 
 
 // PORT=14433 NODE_ENV=PRODUCTION node app.js
+
+//export PORT=14433; export NODE_ENV=PRODUCTION; ~/usr/local/lib/node_modules/.bin/forever -o ~/var/log/app.log -e ~/var/log/app_error.log start app.js
