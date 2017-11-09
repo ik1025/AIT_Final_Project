@@ -64,6 +64,7 @@ An Example Tournament with Embedded Items:
 (5 points) Integrate user authentication.
 
 (2 points) Use a CSS framework throughout my site.
+![Initially used](src/views/layout.hbs)
 
 (3 points) Configuration management.
 
@@ -76,3 +77,5 @@ An Example Tournament with Embedded Items:
 
 
 ## Annotations / References Used
+Code pen used from here to help build the physical bracket:
+https://codepen.io/aronduby/pen/qliuj
