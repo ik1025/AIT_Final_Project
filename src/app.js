@@ -105,14 +105,22 @@ app.post('/createTourny', function(req,res) {
    }
 });
 
+  var winners = [];
 
 app.get('/bracket',function(req,res) {
  Tournament.find({},function(err,x,count) {
     var a = x[x.length-1];
    console.log('From DB');
    console.log(x);
-   res.render('adding',{"info":a});
+   res.render('adding',{"info":a, "FirstWin":winners});
  });
+});
+
+app.post('/bracket',function(req,res) {
+  for(let i = 1; i < 5; i++) {
+    winners.push(req.body['Winner' + i]);
+  }
+  res.redirect('/bracket');
 });
 
 //------------------------------PORT LISTENING-------------------------------
