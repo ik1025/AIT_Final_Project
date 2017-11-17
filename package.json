@@ -18,6 +18,9 @@
   "homepage": "https://github.com/nyu-csci-ua-0480-007-fall-2017/ik1025-final-project#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
-    "mongoose": "^4.13.0"
+    "mongoose": "^4.13.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.4.0"
   }
 }

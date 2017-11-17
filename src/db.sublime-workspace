@@ -1,0 +1,900 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Co",
+				"Computer"
+			],
+			[
+				"a",
+				"appendChild"
+			],
+			[
+				"Comp",
+				"Computer"
+			],
+			[
+				"Com",
+				"ComputerCard1"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"Pla",
+				"Player1"
+			],
+			[
+				"Pl",
+				"Player1"
+			],
+			[
+				"pl",
+				"PlayerCard2"
+			],
+			[
+				"Pa",
+				"PlayerCard2"
+			],
+			[
+				"Play",
+				"PlayerCard1"
+			],
+			[
+				"get",
+				"getElementsByClassName"
+			],
+			[
+				"card",
+				"Card4"
+			],
+			[
+				"Car",
+				"Card2"
+			],
+			[
+				"start",
+				"startValues"
+			],
+			[
+				"Delete",
+				"DeletePic"
+			],
+			[
+				"leng",
+				"length"
+			],
+			[
+				"imag",
+				"imagepost"
+			],
+			[
+				"image",
+				"image-posts"
+			],
+			[
+				"imagepost",
+				"imagepost"
+			],
+			[
+				"Url",
+				"Url"
+			],
+			[
+				"Image",
+				"ImagePost"
+			],
+			[
+				"I",
+				"Image"
+			],
+			[
+				"Imag",
+				"ImagePost"
+			],
+			[
+				"splitUp",
+				"splitUp"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"add",
+				"addedBy"
+			],
+			[
+				"sess",
+				"session"
+			],
+			[
+				"my",
+				"myName"
+			],
+			[
+				"body",
+				"body"
+			],
+			[
+				"session",
+				"session"
+			],
+			[
+				"fil",
+				"filterDirector"
+			],
+			[
+				"dire",
+				"director"
+			],
+			[
+				"yea",
+				"years"
+			],
+			[
+				"direc",
+				"director"
+			],
+			[
+				"di",
+				"directors"
+			],
+			[
+				"dir",
+				"director"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"ses",
+				"sessionId"
+			],
+			[
+				"hw",
+				"hwSession"
+			],
+			[
+				"se",
+				"sessionId"
+			],
+			[
+				"o",
+				"objectos"
+			],
+			[
+				"obj",
+				"objectos"
+			],
+			[
+				"count",
+				"count"
+			],
+			[
+				"re",
+				"rearrange"
+			],
+			[
+				"parse",
+				"parseCookies"
+			],
+			[
+				"Nam",
+				"NamesAndHex"
+			],
+			[
+				"background-c",
+				"background-color"
+			],
+			[
+				"Tem",
+				"TempBandz"
+			],
+			[
+				"sta",
+				"StartBands"
+			],
+			[
+				"st",
+				"StartBands"
+			],
+			[
+				"nam",
+				"NamesAndHex"
+			],
+			[
+				"colo",
+				"ColorArray"
+			],
+			[
+				"geen",
+				"greenP"
+			],
+			[
+				"green",
+				"greenP"
+			],
+			[
+				"fi",
+				"firstColor"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"blue",
+				"blue"
+			],
+			[
+				"Color",
+				"ColorArray"
+			],
+			[
+				"He",
+				"Hex_Blue"
+			],
+			[
+				"Hex",
+				"Hex_Red"
+			],
+			[
+				"gre",
+				"greenP"
+			],
+			[
+				"r",
+				"require"
+			],
+			[
+				"ge",
+				"genre"
+			],
+			[
+				"filter",
+				"filter"
+			],
+			[
+				"FL",
+				"Fl"
+			],
+			[
+				"Final",
+				"FINAL"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"publi",
+				"publicPath"
+			],
+			[
+				"cons",
+				"constructor"
+			],
+			[
+				"write",
+				"write"
+			],
+			[
+				"send",
+				"send"
+			],
+			[
+				"w",
+				"writeHead"
+			],
+			[
+				"wri",
+				"write"
+			],
+			[
+				"length",
+				"length-1"
+			],
+			[
+				"file",
+				"fileNombre"
+			],
+			[
+				"stat",
+				"statusCode"
+			],
+			[
+				"Heads",
+				"Heads"
+			],
+			[
+				"Head",
+				"HeadString"
+			],
+			[
+				"req",
+				"req"
+			],
+			[
+				"head",
+				"headArray"
+			],
+			[
+				"hea",
+				"headers"
+			],
+			[
+				"he",
+				"headers"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"has",
+				"hasOwnProperty"
+			],
+			[
+				"Count",
+				"Counts"
+			],
+			[
+				"Coun",
+				"Counts"
+			],
+			[
+				"All",
+				"AllStates"
+			],
+			[
+				"MS",
+				"MXMSG"
+			],
+			[
+				"LV",
+				"LVPZA"
+			],
+			[
+				"s",
+				"stars"
+			],
+			[
+				"Av",
+				"AvgRtg"
+			],
+			[
+				"Find",
+				"findMost"
+			],
+			[
+				"read",
+				"readFileWith"
+			],
+			[
+				"j",
+				"j"
+			],
+			[
+				"pro",
+				"processYelpData"
+			],
+			[
+				"arr",
+				"arrayify"
+			],
+			[
+				"JSON",
+				"JSON"
+			],
+			[
+				"repl",
+				"replace2"
+			],
+			[
+				"replac",
+				"replace1"
+			],
+			[
+				"repla",
+				"replace"
+			],
+			[
+				"filt",
+				"FilterHelper"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"filte",
+				"filterHelper"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"limi",
+				"limitCallsDecorator"
+			],
+			[
+				"arg",
+				"args"
+			],
+			[
+				"args",
+				"args"
+			],
+			[
+				"rep",
+				"repeatCallAllArgs"
+			],
+			[
+				"su",
+				"sumArray"
+			],
+			[
+				"let",
+				"letter"
+			],
+			[
+				"alg",
+				"algebraicToRowCol"
+			],
+			[
+				"boa",
+				"board"
+			],
+			[
+				"board",
+				"boardToString"
+			],
+			[
+				"test",
+				"test1"
+			],
+			[
+				"boar",
+				"boardToString"
+			],
+			[
+				"reas",
+				"readlineSync"
+			],
+			[
+				"temp",
+				"TempArray"
+			],
+			[
+				"ind",
+				"indexToRowCol"
+			],
+			[
+				"qu",
+				"question"
+			],
+			[
+				"O",
+				"O"
+			],
+			[
+				"row",
+				"rowColToIndex"
+			],
+			[
+				"alb",
+				"algebraicToRowCol"
+			],
+			[
+				"UP",
+				"UPLEFTstorage"
+			],
+			[
+				"TE",
+				"TempCoordinate"
+			],
+			[
+				"toB",
+				"toBeFlipped5"
+			],
+			[
+				"Temp",
+				"TempCoordinate"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/src"
+	],
+	"file_history":
+	[
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/src/app.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/src/db.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework07/src/app.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework07/src/public/stylesheets/style.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework07/src/public/javascripts/main.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework07/src/public/index.html",
+		"/C/Users/Asus Owner/Desktop/gimbal.py",
+		"/C/Users/Asus Owner/Downloads/gimbal.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/gimbal.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/app.js",
+		"/C/Users/Asus Owner/Downloads/gimbal",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Six/ik1025-homework06/db.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Six/ik1025-homework06/views/select.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Six/ik1025-homework06/app.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/bandz/views/homepage.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/bandz/bandz.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Six/ik1025-homework06/views/layout.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Six/ik1025-homework06/views/index.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/src/views/layout.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/src/views/index.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/src/views/adding.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/README.md",
+		"/C/Users/Asus Owner/AppData/Local/Temp/Temp1_bootstrap-4.0.0-beta.2-dist.zip/css/bootstrap.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/views/colors.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/colors.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/views/index.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/views/layout.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/db.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework06/image-board/src/views/layout.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework06/image-board/src/views/home.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework06/image-board/src/db.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework06/image-board/src/app.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Final Project/ik1025-final-project/src/public/css/bracket.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/rop.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/inspector.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/views/add.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/views/session.hbs",
+		"/C/Users/Asus Owner/Desktop/Quiz.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/cookied/cookied.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/cookied/colors.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/cookied/app.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/public/css/base.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/cookied/views/preferences.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/cookied/views/index.hbs",
+		"/C/Users/Asus Owner/Desktop/SavedOther.txt",
+		"/C/Users/Asus Owner/Desktop/HW5.txt",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/public/css/session.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/movies/public/css/table.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/boffin.py",
+		"/C/Users/Asus Owner/Desktop/gitterton.py",
+		"/C/Users/Asus Owner/Desktop/git (1).py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/git.py",
+		"/C/Users/Asus Owner/Downloads/git_got_good",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/views/index.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/views/layout.hbs",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/Brutus.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/cookied/test.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/brutus",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/school.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/gitot.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/git_got_good.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/overflow.c",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/backdoor.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/mathwhiz.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/oldschool.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Example/Hello.c",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/quiz.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/colorlib.js",
+		"/C/Users/Asus Owner/Desktop/boffin.py",
+		"/C/Users/Asus Owner/Desktop/school.py",
+		"/C/Users/Asus Owner/Desktop/HackerRank.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework05/src/cookied/views/layout.hbs",
+		"/C/Users/Asus Owner/Downloads/login.php",
+		"/C/Users/Asus Owner/Desktop/backdoor.py",
+		"/C/Users/Asus Owner/Downloads/db.sql",
+		"/C/Users/Asus Owner/Desktop/New_shell.php",
+		"/C/Users/Asus Owner/Downloads/backdoor (1)",
+		"/C/Users/Asus Owner/Desktop/school",
+		"/C/Users/Asus Owner/Desktop/oveflow",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/bandz/views/layout.hbs",
+		"/C/Users/Asus Owner/Desktop/overflow.c",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/CallApplyBind.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/SingleServe.js",
+		"/C/Users/Asus Owner/Downloads/boffin (1)",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/midterm.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/http.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/ProgramStruct.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/ValuesTypes.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/bandz/public/css/base.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/public/css/base.css",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/views/about.hbs",
+		"/C/Users/Asus Owner/Desktop/home.hbs",
+		"/C/Users/Asus Owner/Desktop/app.js",
+		"/C/Users/Asus Owner/Desktop/layout.hbs",
+		"/C/Users/Asus Owner/Desktop/get-post-middleware.zip",
+		"/C/Users/Asus Owner/Downloads/get-post-middleware.zip",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework02/src/report.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework02/src/yelpfunc.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework02/src/hoffy.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework03/src/evenWarmer.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework03/src/fansite.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework03/src/warmUp.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework04/src/colors/views/viewname.hbs",
+		"/C/Users/Asus Owner/Downloads/beacon",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework03/test/request-response-test.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework03/src/miniWeb.js",
+		"/C/Users/Asus Owner/Downloads/postage",
+		"/C/Users/Asus Owner/Downloads/numerix (1)",
+		"/C/Users/Asus Owner/Downloads/numerix",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework02/tests/hoffy-test.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework02/src/help.js",
+		"/C/Users/Asus Owner/Downloads/index (1).php",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/responsetry.py",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/tryPHP.php",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/index.php",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework02/gitignore.txt",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework01/src/reversi.js",
+		"/C/Users/Asus Owner/Desktop/what.svg",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework01/tests/reversi-test.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework01/src/app.js",
+		"/C/Users/Asus Owner/Documents/whatever.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/IOCS/Homework/SQLIpractice.sql",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/test.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework01/functions.js",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Homework/ik1025-homework01/README.md",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/practice.sql",
+		"/C/Users/Asus Owner/Desktop/Productivity/school/Junior Year/Sem 1/AIT/Misc/fizzbuzz.js",
+		"/C/Program Files/Sublime Text 3/whatever.js"
+	],
+	"find":
+	{
+		"height": 52.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"play",
+			"require('./",
+			"splitted",
+			"sessionStore",
+			"console.log",
+			"env",
+			"new_",
+			"namesandhex",
+			"console.log",
+			"read",
+			"\\",
+			"sendFile",
+			"handleread",
+			".end(",
+			".end",
+			"bind",
+			".end",
+			"end",
+			"handleread",
+			"bind",
+			"handleread",
+			"message",
+			".end",
+			"read",
+			"fn",
+			"readfile",
+			"cambiar",
+			"findMost",
+			"cambiar",
+			"})",
+			"cambiar",
+			"console.log",
+			"for",
+			"constrain",
+			"StMsg",
+			"module",
+			"processYelpDAta",
+			"return",
+			"limitCalls",
+			"\\",
+			"/",
+			"length",
+			"}\n",
+			"typeof",
+			"setboard",
+			"boardtoS",
+			"isValid",
+			"algebraic",
+			"placeL",
+			"isvalid",
+			"boardtoStr",
+			"boardto",
+			"isvalidMove",
+			"console.log(toBeRet",
+			"console.log",
+			"isvalidmovealg",
+			"isvalidmove",
+			"rowcoltoIndex",
+			"isboard",
+			"DOWNLEFT",
+			"flip",
+			"generate",
+			"new String('",
+			"new String('x').valueof()",
+			"new string(",
+			"isFirstHex",
+			"barpic",
+			"panda",
+			"3",
+			"solar",
+			";\"><",
+			"first",
+			"bulletin",
+			"solid black",
+			"border: 1px",
+			"border:1px",
+			"border: 1px solid black;",
+			"border:1px solid black",
+			"1900",
+			"imgClickand",
+			"puppy.png",
+			"class",
+			"puppy.png",
+			";\"",
+			"div",
+			";\n",
+			">\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "db.sublime-project",
+	"replace":
+	{
+		"height": 53.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Asus Owner\\Downloads\\login.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
