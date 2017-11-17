@@ -106,13 +106,41 @@ app.post('/createTourny', function(req,res) {
 });
 
   var winners = [];
+  let count = 0;
 
 app.get('/bracket',function(req,res) {
  Tournament.find({},function(err,x,count) {
-    var a = x[x.length-1];
+  var a = x[x.length-1];
+
+  var winnerz = [];
+  if(req.query.Between1 === 'left') {
+    winnerz.push(a.users[0]);
+  }
+  if(req.query.Between1 === 'right') {
+    winnerz.push(a.users[1]);
+  }
+  if(req.query.Between2 === 'left') {
+    winnerz.push(a.users[2]);
+  }
+  if(req.query.Between2 === 'right') {
+    winnerz.push(a.users[3]);
+  }
+  if(req.query.Between3 === 'left') {
+    winnerz.push(a.users[4]);
+  }
+  if(req.query.Between3 === 'right') {
+    winnerz.push(a.users[5]);
+  }
+  if(req.query.Between4 === 'left') {
+    winnerz.push(a.users[6]);
+  }
+  if(req.query.Between4 === 'right') {
+    winnerz.push(a.users[7]);
+  }
+    
    console.log('From DB');
    console.log(x);
-   res.render('adding',{"info":a, "FirstWin":winners});
+   res.render('adding',{"info":a, "FirstWin":winners, "Count":count, "Real":winnerz});
  });
 });
 
