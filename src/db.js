@@ -5,8 +5,9 @@ const passportLocalMongoose = require('passport-local-mongoose');
 const User = new mongoose.Schema({
 	//username: String,
 	//hash: String,
-	tournaments: Object,
-	isAdmin: Boolean,
+	name:String,
+	// tournaments: Object,
+	// isAdmin: Boolean,
 });
 
 User.plugin(passportLocalMongoose);
@@ -14,11 +15,12 @@ mongoose.model('User',User);
 
 
 const Tournament = new mongoose.Schema({
-	users: Object,
+	users: [User],
 	title: String
 });
 
 Tournament.plugin(passportLocalMongoose);
+
 mongoose.model('Tournament',Tournament);
 
 let dbconf;

@@ -5,27 +5,27 @@
 	<ul class="round round-1">
 		<li class="spacer">&nbsp;</li>
 		
-		<li class="game game-top winner">{{info.users.[0]}}</li>
+		<li class="game game-top winner">{{info.users.[0].name}}</li>
 		<li class="game game-spacer">&nbsp;</li>
-		<li class="game game-bottom ">{{info.users.[1]}}</li>
+		<li class="game game-bottom ">{{info.users.[1].name}}</li>
 
 		<li class="spacer">&nbsp;</li>
 		
-		<li class="game game-top winner">{{info.users.[2]}}</li>
+		<li class="game game-top winner">{{info.users.[2].name}}</li>
 		<li class="game game-spacer">&nbsp;</li>
-		<li class="game game-bottom ">{{info.users.[3]}}</li>
+		<li class="game game-bottom ">{{info.users.[3].name}}</li>
 
 		<li class="spacer">&nbsp;</li>
 		
-		<li class="game game-top ">{{info.users.[4]}}</li>
+		<li class="game game-top ">{{info.users.[4].name}}</li>
 		<li class="game game-spacer">&nbsp;</li>
-		<li class="game game-bottom winner">{{info.users.[5]}}</li>
+		<li class="game game-bottom winner">{{info.users.[5].name}}</li>
 
 		<li class="spacer">&nbsp;</li>
 		
-		<li class="game game-top winner">{{info.users.[6]}}</li>
+		<li class="game game-top winner">{{info.users.[6].name}}</li>
 		<li class="game game-spacer">&nbsp;</li>
-		<li class="game game-bottom ">{{info.users.[7]}}</li>
+		<li class="game game-bottom ">{{info.users.[7].name}}</li>
 
 	</ul>
 	<ul class="round round-2">
@@ -55,3 +55,9 @@
 		<li class="spacer">&nbsp;</li>
 	</ul>
 </main>
+
+
+<form method = "POST" action="/bracket">
+  First Match Winner:<input type="text" name="Winner1"> <br>
+  <input type="submit">
+</form>

@@ -74,32 +74,43 @@ app.post('/register', function(req, res) {
 });
 
 
-app.get('/createTourny',function(req,res) {
-   let title = req.query.title;
-   var x = [];
-   for(let i = 1; i < 9; i++) {
-     x.push(req.query['Seed' + i]);
-   }
-   var tourny = new Tournament({
-     users: x,
-     title: title
-   });
-   tourny.save(function(err,tournament,count) {
-     console.log('Tournament Saved');
-   });
 
-   if(req.query.title === undefined) {
-     res.render('index');
-   }
-   else {
-     res.redirect('/bracket');
+app.get('/createTourny',function(req,res) {
+  res.render('index');
+});
+
+
+app.post('/createTourny', function(req,res) {
+   let title = req.body.title;
+   var x = [];
+   if(req.body['Seed1'] !== undefined) {
+     for(let i = 1; i < 9; i++) {
+      // create a list of new User objects
+      var UserObj = new User({
+        name: req.body['Seed' + i]
+      });
+       x.push(UserObj);
+     }
+
+     var tourny = new Tournament({
+       users: x,
+       title: title
+     });
+
+     tourny.save(function(err,tournament,count) {
+      console.log('Tournament Saved');
+      console.log(tourny);
+      res.redirect('/bracket');
+     });
    }
 });
 
 
-app.get('/bracket',(req,res) =>{
+app.get('/bracket',function(req,res) {
  Tournament.find({},function(err,x,count) {
-   var a = x[x.length-1];
+    var a = x[x.length-1];
+   console.log('From DB');
+   console.log(x);
    res.render('adding',{"info":a});
  });
 });
@@ -206,4 +217,65 @@ app.listen(process.env.PORT || 3000);
 //       });
 //     }
 //   });   
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//app.get('/createTourny',function(req,res) {
+//    let title = req.query.title;
+//    var x = [];
+//    if(req.query['Seed1'] !== undefined) {
+//      for(let i = 1; i < 9; i++) {
+//        x.push(req.query['Seed' + i]);
+//      }
+
+//      var tourny = new Tournament({
+//        users: x,
+//        title: title
+//      });
+
+//      tourny.save(function(err,tournament,count) {
+//       console.log('Tournament Saved');
+//       console.log(tourny);
+//      });
+//    }
+
+//    if(req.query.title === undefined) {
+//      res.render('index');
+//    }
+//    else {
+//      res.redirect('/bracket');
+//    }
+// });
+
+
+// app.get('/bracket',function(req,res) {
+//  Tournament.find({},function(err,x,count) {
+//    var a = x[x.length-1];
+//    console.log('From DB');
+//    console.log(a);
+//    res.render('adding',{"info":a});
+//  });
 // });
