@@ -6,11 +6,11 @@ module.exports = function(app,passport) {
 	}
 
 	app.get('/',function(req,res) {
-		res.render('index.hbs');
+		res.render('index');
 	});
 
 	app.get('/login',function(req,res) {
-		res.render('login.hbs', {message: req.flash('loginMessage')});
+		res.render('login', {message: req.flash('loginMessage')});
 	});
 
     // process the login form
@@ -22,7 +22,7 @@ module.exports = function(app,passport) {
 
 
 	app.get('/signup',function(req,res) {
-		res.render('signup.hbs', {message: req.flash('signupMessage')});
+		res.render('signup', {message: req.flash('signupMessage')});
 	});
 
     app.post('/signup', passport.authenticate('local-signup', {
@@ -55,108 +55,126 @@ module.exports = function(app,passport) {
 	app.post('/createBracket', isLoggedIn,function(req,res) {
 		let tName = req.body.bracketTitle;
 		var tUsers = [];
+		var tusersCopy = [];
 
 		for(let i = 1; i < 9; i++) {
 			tUsers.push(req.body['User' + i]);
 		}
 
-		curTournament = new Tournament(tName,tUsers);
+		tUsers.forEach(function(x) {
+			tusersCopy.push(x);
+		});
+
+		curTournament = new Tournament(tName,tusersCopy);
 
 		req.user.Tournament = curTournament;
 
 		req.user.save();
 
-		// console.log('In the Post:');
-		// console.log(req.user);
-		// console.log();
-
 		res.redirect('/bracketDisplay');		
 	});
 
 	app.get('/bracketDisplay',isLoggedIn,function(req,res) {
-		var Gizone = [];
-		let UnoaDos = OnetoTwo;
-		console.log(OnetoTwo);
-		console.log(UnoaDos);
-		Gizone.push(OnetoTwo);
-		res.render('bracketDisplay.hbs', {user:req.user, tourny: req.user.Tournament, gone: OnetoTwo});
+		var tourny2 = [];
+		req.user.Tournament.users.forEach(function(x) {
+			tourny2.push(x);
+		});
+		res.render('bracketDisplay', {user:req.user, tourny: req.user.Tournament, other: tourny2});
 	});
 
-	let OnetoTwo = '';
-
 	app.post('/bracketDisplay',function(req,res) {
-		var ROWinners = [];
-		
-		if(req.body.G1 === 'top') {
-			req.user.Tournament.users.push(req.user.Tournament.users[0]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G1 === 'Bottom') {
-			req.user.Tournament.users.push(req.user.Tournament.users[7]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G2 === 'top') {
-			req.user.Tournament.users.push(req.user.Tournament.users[3]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G2 === 'Bottom') {
-			req.user.Tournament.users.push(req.user.Tournament.users[4]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G3 === 'top') {
-			req.user.Tournament.users.push(req.user.Tournament.users[2]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G3 === 'Bottom') {
-			req.user.Tournament.users.push(req.user.Tournament.users[5]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G4 === 'top') {
-			req.user.Tournament.users.push(req.user.Tournament.users[1]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G4 === 'Bottom') {
-			req.user.Tournament.users.push(req.user.Tournament.users[6]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G5 === 'top') {
-			req.user.Tournament.users.push(req.user.Tournament.users[8]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G5 === 'Bottom') {
-			req.user.Tournament.users.push(req.user.Tournament.users[9]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G6 === 'top') {
-			req.user.Tournament.users.push(req.user.Tournament.users[10]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G6 === 'Bottom') {
-			req.user.Tournament.users.push(req.user.Tournament.users[11]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G7 === 'top') {
-			req.user.Tournament.users.push(req.user.Tournament.users[12]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
-		if(req.body.G7 === 'Bottom') {
-			req.user.Tournament.users.push(req.user.Tournament.users[13]);
-			req.user.markModified('Tournament');
-			req.user.save();
-		}
+		var AvgSeed = [];
+
+			if(req.body.G1 === 'top') {
+				AvgSeed.push(1);
+				req.user.Tournament.users.push(req.user.Tournament.users[0]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+			if(req.body.G1 === 'Bottom') {
+				AvgSeed.push(8);
+				req.user.Tournament.users.push(req.user.Tournament.users[7]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+
+			if(req.body.G2 === 'top') {
+				AvgSeed.push(4);
+				req.user.Tournament.users.push(req.user.Tournament.users[3]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+			if(req.body.G2 === 'Bottom') {
+				AvgSeed.push(5);
+				req.user.Tournament.users.push(req.user.Tournament.users[4]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+
+			if(req.body.G3 === 'top') {
+				AvgSeed.push(3);
+				req.user.Tournament.users.push(req.user.Tournament.users[2]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+			if(req.body.G3 === 'Bottom') {
+				AvgSeed.push(6);
+				req.user.Tournament.users.push(req.user.Tournament.users[5]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+
+			if(req.body.G4 === 'top') {
+				AvgSeed.push(2);
+				req.user.Tournament.users.push(req.user.Tournament.users[1]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+			if(req.body.G4 === 'Bottom') {
+				AvgSeed.push(7);
+				req.user.Tournament.users.push(req.user.Tournament.users[6]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+
+			if(req.body.G5 === 'top') {
+				AvgSeed.push(AvgSeed[0]);
+				req.user.Tournament.users.push(req.user.Tournament.users[8]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+			if(req.body.G5 === 'Bottom') {
+				AvgSeed.push(AvgSeed[1]);
+				req.user.Tournament.users.push(req.user.Tournament.users[9]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+
+			if(req.body.G6 === 'top') {
+				AvgSeed.push(AvgSeed[2]);
+				req.user.Tournament.users.push(req.user.Tournament.users[10]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+			if(req.body.G6 === 'Bottom') {
+				AvgSeed.push(AvgSeed[3]);
+				req.user.Tournament.users.push(req.user.Tournament.users[11]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+
+			if(req.body.G7 === 'top') {
+				AvgSeed.push(AvgSeed[4]);
+				req.user.Tournament.users.push(req.user.Tournament.users[12]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}
+			if(req.body.G7 === 'Bottom') {
+				AvgSeed.push(AvgSeed[5]);
+				req.user.Tournament.users.push(req.user.Tournament.users[13]);
+				req.user.markModified('Tournament');
+				req.user.save();
+			}	
 
 		req.user.save();
 		res.redirect('/bracketDisplay');
