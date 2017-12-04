@@ -3,7 +3,7 @@
     <title>Node Authentication</title>
     <style>
         body{ 
-            padding-top:80px;
+            padding-top:80px; 
             background-color: #8c86aa;
         }
     </style>
@@ -13,12 +13,12 @@
 
 <div class="jumbotron">
 
-    <h1>Login</h1>
+    <h1>Signup</h1>
 
     <!-- LOGIN FORM -->
-    <form action="/login" method="post">
+    <form action="/signup" method="post">
         <div class="form-group">
-            <label>Username</label>
+            <label>Email</label>
             <input type="text" class="form-control" name="email">
         </div>
         <div class="form-group">
@@ -26,12 +26,12 @@
             <input type="password" class="form-control" name="password">
         </div>
 
-        <button type="submit" class="btn btn-warning btn-lg">Login</button>
+        <button type="submit" class="btn btn-warning btn-lg">Signup</button>
     </form>
 
     <hr>
 
-    <p>Need an account? <a href="/signup">Signup</a></p>
+    <p>Already have an account? <a href="/login">Login</a></p>
     <p>Or go <a href="/">home</a>.</p>
 
 </div>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+    <title>Create Your Bracket!</title>
+    <style>
+        body{ 
+            padding-top:10px; word-wrap:break-word; padding-left: 10px;
+        }
+
+        /*
+         *  Flex Layout Specifics
+        */
+        main{
+          display:flex;
+          flex-direction:row;
+        }
+        .round{
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          width:200px;
+          list-style:none;
+          padding:0;
+        }
+          .round .spacer{ flex-grow:1; }
+          .round .spacer:first-child,
+          .round .spacer:last-child{ flex-grow:.5; }
+
+          .round .game-spacer{
+            flex-grow:1;
+          }
+        .gone {
+            visibility: hidden;
+        }
+
+        /*
+         *  General Styles
+        */
+        body{
+          font-family:sans-serif;
+          font-size:small;
+          padding:10px;
+          line-height:1.4em;
+        }
+
+        li.game{
+          padding-left:20px;
+        }
+
+          li.game.{
+            font-weight:bold;
+          }
+          li.game span{
+            float:right;
+            margin-right:5px;
+          }
+
+          li.game-top{ border-bottom:1px solid #aaa; }
+
+          li.game-spacer{ 
+            border-right:1px solid #aaa;
+            min-height:40px;
+          }
+
+          li.game-bottom{ 
+            border-top:1px solid #aaa;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="all">
+    <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    <h1>{{tourny.title}}</h1>
+    <main id="tournament">
+        <ul class="round round-1">
+            <li class="spacer">&nbsp;</li>
+            
+            <li class="game game-top ">{{tourny.users.[0]}}</li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom ">{{tourny.users.[7]}}</li>
+
+            <li class="spacer">&nbsp;</li>
+            
+            <li class="game game-top ">{{tourny.users.[3]}}</li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom ">{{tourny.users.[4]}}</li>
+
+            <li class="spacer">&nbsp;</li>
+            
+            <li class="game game-top ">{{tourny.users.[2]}}</li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom ">{{tourny.users.[5]}}</li>
+
+            <li class="spacer">&nbsp;</li>
+            
+            <li class="game game-top ">{{tourny.users.[1]}}</li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom ">{{tourny.users.[6]}}</li>
+
+            <li class="spacer">&nbsp;</li>
+        </ul>
+         <ul class="round round-2">
+            <li class="spacer">&nbsp;</li>
+            
+            <li class="game game-top ">{{tourny.users.[8]}}</li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom ">{{tourny.users.[9]}}</li>
+
+            <li class="spacer">&nbsp;</li>
+            
+            <li class="game game-top ">{{tourny.users.[10]}}</li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom ">{{tourny.users.[11]}}</li>
+
+            <li class="spacer">&nbsp;</li>
+      </ul>
+       <ul class="round round-3">
+            <li class="spacer">&nbsp;</li>
+            
+            <li class="game game-top ">{{tourny.users.[12]}}</li>
+            <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom ">{{tourny.users.[13]}}</li>
+
+            <li class="spacer">&nbsp;</li>
+        </ul>
+        <ul class="round round-4">
+            <!-- <li class="spacer">&nbsp;</li> -->
+            <li><h1>Winner: {{tourny.users.[14]}}</h1></li>
+           <!--  <li class="game game-top "></li> -->
+<!--             <li class="game game-spacer">&nbsp;</li>
+            <li class="game game-bottom "></li>
+            
+            <li class="spacer">&nbsp;</li> -->
+        </ul>       
+    </main>
+
+
+<!--     <form method="POST" action="/bracketDisplay">
+        <input type="hidden" name="showed" value="nope">
+    </form> -->
+
+<!--     <script>
+        function main() {
+            console.log('main');
+             //console.log({{gone}});
+            const a = document.querySelector('.form1');
+            const b = document.querySelector('.form2');
+
+            // a.classList.add({{gone}});
+            // b.classList.remove({{gone}});            
+
+            a.addEventListener('click',function(evt) {
+                console.log('pressed');
+                evt.preventDefault();
+                this.classList.add('gone');
+                b.classList.remove('gone');
+                this.form.submit();
+            });
+        }
+
+        function FormBGone(evt) {
+            console.log('sub');
+            //evt.preventDefault();
+            this.classList.add('gone');
+            this.form.submit();
+            
+        }
+
+        document.addEventListener('DOMContentLoaded', main);
+    </script> -->
+
+        <div class="form1">
+            <form method="POST" id="round1" action="/bracketDisplay">
+                Pick 1st Round Winners:<br>
+                <input type="radio" name="G1" value="top">{{tourny.users.[0]}}     OR     
+                <input type="radio" name="G1" value="Bottom">{{tourny.users.[7]}} <br><br>
+                <input type="radio" name="G2" value="top">{{tourny.users.[3]}}     OR     
+                <input type="radio" name="G2" value="Bottom">{{tourny.users.[4]}} <br><br>
+                <input type="radio" name="G3" value="top">{{tourny.users.[2]}}     OR     
+                <input type="radio" name="G3" value="Bottom">{{tourny.users.[5]}} <br><br>
+                <input type="radio" name="G4" value="top">{{tourny.users.[1]}}     OR    
+                <input type="radio" name="G4" value="Bottom">{{tourny.users.[6]}} <br><br>
+             <!-- <input type="hidden" name="Form1Sub" value="nope" onclick="this.form.submit()"> <br>-->
+                <button type="submit" formmethod="post" class="Submit1">Submit</button> 
+            </form>
+        </div>
+
+        <div class = "form2">
+            <form method="POST" id="round1" action="/bracketDisplay">
+                Pick 2nd Round Winners:<br>
+                <input type="radio" name="G5" value="top">{{tourny.users.[8]}}     OR     
+                <input type="radio" name="G5" value="Bottom">{{tourny.users.[9]}} <br><br>
+                <input type="radio" name="G6" value="top">{{tourny.users.[10]}}     OR     
+                <input type="radio" name="G6" value="Bottom">{{tourny.users.[11]}} <br><br>
+                <!-- <input type="hidden" name="Form2Sub" value="nope"><br> -->
+                <button type="submit" formmethod="post" class="Submit2">Submit</button>
+            </form>
+        </div>
+
+        <div class = "form3">
+            <form method="POST" id="round1" action="/bracketDisplay">
+                Pick A Champion:<br>
+                <input type="radio" name="G7" value="top">{{tourny.users.[12]}}     OR     
+                <input type="radio" name="G7" value="Bottom">{{tourny.users.[13]}} <br><br>
+                <!-- <input type="hidden" name="Form2Sub" value="nope"><br> -->
+                <button type="submit" formmethod="post" class="Submit2">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

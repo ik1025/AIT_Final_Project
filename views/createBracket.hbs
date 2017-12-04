@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+    <title>Create Your Bracket!</title>
+    <style>
+        body{ 
+            padding-top:0px; 
+            word-wrap:break-word; 
+            padding-left: 0px;
+            background-color: #8c86aa;
+        }
+    </style>
+</head>
+<body>
+    <div class = "Wrap jumbotron" style="font-size: 100%">
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+        <h1 style = "margin-top: 0px">Create Your Bracket!</h1>
+        <hr>
+
+        <form method= "POST" id="UserSubmission" action = "/createBracket">
+            <h2>Title: <br>
+            <input type ="text" name ="bracketTitle"><br>
+            <br>
+
+            User 1: <input type="text" name="User1" autocomplete="off"><br>
+            <br>
+            User 2: <input type="text" name="User2" autocomplete="off"><br>
+            <br>
+            User 3: <input type="text" name="User3" autocomplete="off"><br>
+            <br>
+            User 4: <input type="text" name="User4" autocomplete="off"><br>
+            <br>
+            User 5: <input type="text" name="User5" autocomplete="off"><br>
+            <br>
+            User 6: <input type="text" name="User6" autocomplete="off"><br>
+            <br>
+            User 7: <input type="text" name="User7" autocomplete="off"><br>
+            <br>
+            User 8: <input type="text" name="User8" autocomplete="off"><br>
+            <br>
+
+        </form><br>
+
+        <button type="submit" form="UserSubmission">Submit</button>
+    </div>
+</body>
+</html>
+
+
+
+
+
+<!-- <div class="container">
+
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Profile Page</h1>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+    <div class="row">
+
+        
+        <div class="col-sm-6">
+            <div class="well">
+                <h3><span class="fa fa-user"></span> Local</h3>
+
+                    <p>
+                        <strong>id</strong>: {{user._id}}<br>
+                        <strong>email</strong>: {{user.local.email}}<br>
+                        <strong>password</strong>: {{user.local.password}}
+                    </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div> -->

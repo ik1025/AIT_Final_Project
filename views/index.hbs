@@ -1,19 +1,28 @@
-<h1>What's the name of the tournament?</h1>
-<form method = "POST" action = "/createTourny">
-	<input type = "text" name = "title">
+<html>
+<head>
+    <title>Node Authentication</title>
+<!--     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+    <style>
+        body{ 
+            padding-top:80px; 
+            background-color: #8c86aa;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
 
-<br><br><br><br><br><br>
+    <div class="jumbotron">
+        <h1>Welcome to Bracketology</h1>
 
-<h2>Seeding:</h2>
-<br>
-<form method = "POST" action="/createTourny">
-  Seed #1:<input type="text" name="Seed1"> <br>
-  Seed #2:<input type="text" name="Seed2"> <br> 
-  Seed #3:<input type="text" name="Seed3"> <br>
-  Seed #4:<input type="text" name="Seed4"> <br> 
-  Seed #5:<input type="text" name="Seed5"> <br> 
-  Seed #6:<input type="text" name="Seed6"> <br> 
-  Seed #7:<input type="text" name="Seed7"> <br> 
-  Seed #8:<input type="text" name="Seed8"> <br> 
-  <input type="submit">
-</form>
+        <p>Login or Register with:</p>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Local Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> Local Signup</a>
+        <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+    </div>
+
+</div>
+</body>
+</html>
