@@ -27,8 +27,8 @@ app.use(flash());
 
 require('./config/passport')(passport);
 
-require('./application/user.js');
-require('./application/Tournyz.js');
+require('./application/models/user.js');
+require('./application/models/Tournyz.js');
 
 require('./config/db.js');
 //mongoose.connect(configDB.url);
