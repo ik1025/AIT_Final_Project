@@ -1,3 +1,5 @@
+var Tournyz = require('./models/Tournyz');
+
 module.exports = function(app,passport) {
 
 	function Tournament(title, users) {
@@ -31,16 +33,16 @@ module.exports = function(app,passport) {
         failureFlash : true // allow flash messages
     }));
 
-    app.get('/auth/facebook', passport.authenticate('facebook', { 
-      scope : ['public_profile', 'email']
-    }));
+    // app.get('/auth/facebook', passport.authenticate('facebook', { 
+    //   scope : ['public_profile', 'email']
+    // }));
 
-    // handle the callback after facebook has authenticated the user
-    app.get('/auth/facebook/callback',
-        passport.authenticate('facebook', {
-            successRedirect : '/createBracket',
-            failureRedirect : '/'
-        }));
+    // // handle the callback after facebook has authenticated the user
+    // app.get('/auth/facebook/callback',
+    //     passport.authenticate('facebook', {
+    //         successRedirect : '/createBracket',
+    //         failureRedirect : '/'
+    //     }));
 
 	app.get('/createBracket', isLoggedIn, function(req,res) {
 		if(req.user.Tournament === undefined) {
@@ -74,12 +76,18 @@ module.exports = function(app,passport) {
 		res.redirect('/bracketDisplay');		
 	});
 
+	function notSpace(value) {
+		return value !== undefined;
+	}
+
 	app.get('/bracketDisplay',isLoggedIn,function(req,res) {
 		var tourny2 = [];
 		req.user.Tournament.users.forEach(function(x) {
 			tourny2.push(x);
 		});
-		res.render('bracketDisplay', {user:req.user, tourny: req.user.Tournament, other: tourny2});
+
+		var tourny3 = tourny2.filter(notSpace);
+		res.render('bracketDisplay', {user:req.user, tourny: req.user.Tournament, other: tourny3});
 	});
 
 	app.post('/bracketDisplay',function(req,res) {
