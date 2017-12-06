@@ -55,11 +55,8 @@ module.exports = function(app,passport) {
 		});
 
 		curTournament = new Tournament(tName,tusersCopy);
-
 		req.user.Tournament = curTournament;
-
 		req.user.save();
-
 		res.redirect('/bracketDisplay');		
 	});
 

@@ -30,17 +30,8 @@ require('./config/passport')(passport);
 require('./application/models/user.js');
 
 require('./config/db.js');
-//mongoose.connect(configDB.url);
 
 require('./application/routes.js')(app,passport);
-
-
-
-
-
-
-
-
 
 module.exports = router;
 app.listen(process.env.PORT || 3000);
